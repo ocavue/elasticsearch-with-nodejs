@@ -11,3 +11,4 @@ RUN yum install epel-release -y
 RUN yum install jq -y && \
     jq --version
 RUN yum install -y vim
+RUN npm install -g 'elasticdump@6.21.0'
