@@ -7,3 +7,7 @@ RUN ./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-an
 FROM with-plugin
 RUN curl -sL https://rpm.nodesource.com/setup_10.x | bash -
 RUN yum install -y nodejs
+RUN yum install epel-release -y
+RUN yum install jq -y && \
+    jq --version
+RUN yum install -y vim
